@@ -28,7 +28,8 @@ body {
 .summary__card {
     display: grid;
     width: 320px;
-    margin: 80px auto;
+    margin: 0 auto;
+    margin-top: 10vh;
     background-color: #fff;
     overflow: hidden;
     border-radius: 20px;
@@ -97,7 +98,7 @@ body {
 .payment__cta {
     background-color: var(--active);
     color: var(--txt);
-    padding: 15px 20px;
+    padding: 15px 0;
     text-decoration: none;
     font-weight: 900;
     border-radius: 10px;
@@ -138,11 +139,57 @@ body {
     }
 
     .summary__card {
-        width: 380px;
-        margin: 100px auto;
+        width: 350px;
+    }
+    
+    .info__container {
+        padding: 15px 30px;
+    }
+    
+    .texts__title {
+        font-size: 1.2rem;
+    }
+    
+    .texts__paragraph {
+        margin: 15px 0;
+        font-size: .9rem;
+    }
+    
+    .card__plan {
+        padding: 15px;
     }
 
-    .info__container {
-        padding: 20px 40px;
+    .plan__icon {
+        width: 40px;
+    }
+
+    .plan__texts {
+        text-align: center;
+    }
+    
+    .plan__texts__title {
+        font-size: .9rem;
+    }
+    
+    .plan__texts__paragraph {
+        font-size: .9rem;
+    }
+    
+    .plan__link {
+        font-size: .8rem;
+    }
+    
+    .payment__cta {
+        padding: 15px 50px;
+        margin: 20px 0;
+    }
+    
+    .payment__cancel {
+        font-size: .9rem;
+        margin: 0 auto 10px;
+    }
+    
+    .payment__cancel:hover {
+        color: var(--title);
     }
 }
