@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* fonts */
+    --font1: 'Red Hat Display', sans-serif;
+    /* colors */
+    --mainbg: hsl(225, 100%, 94%);
+    --active: hsl(245, 75%, 52%);
+    --active2: hsl(245, 75%, 52%, .8);
+    --price: hsl(225, 100%, 98%);
+    --paragraph: hsl(225, 24%, 55%);
+    --title: hsl(223, 59%, 27%);
+    --txt: hsl(0, 0%, 100%);
+}
+
+body {
+    background: url(../images/pattern-background-mobile.svg) no-repeat center top, var(--mainbg);
+    font-size: 16px;
+    font-family: var(--font1);
+}
+
+.summary__card {
+    display: grid;
+    width: 320px;
+    margin: 80px auto;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.info__container {
+    padding: 20px;
+}
+
+.card__texts {
+    text-align: center;
+}
+
+.texts__title {
+    color: var(--title);
+    font-weight: 900;
+}
+
+.texts__paragraph {
+    color: var(--paragraph);
+    line-height: 1.8;
+    padding: 0 10px;
+    margin: 15px 0;
+}
+
+.card__plan {
+    background-color: var(--price);
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.plan__texts__title {
+    font-size: 1rem;
+    color: var(--title);
+}
+
+.plan__texts__paragraph {
+    color: var(--paragraph);
+}
+
+.plan__link {
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--active);
+}
+
+.plan__link:hover {
+    color: var(--active2);
+}
+
+.card__payment {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.payment__cta {
+    background-color: var(--active);
+    color: var(--txt);
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: 900;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 6px 20px var(--paragraph);
+}
+
+.payment__cta:hover {
+    background-color: var(--active2);
+}
+
+.payment__cancel {
+    color: var(--paragraph);
+    font-weight: 900;
+    text-decoration: none;
+    margin: 10px auto;
+}
+
+.payment__cancel:hover {
+    color: var(--title);
+}
+
+/* footer */
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* responsive */
+
+@media (min-width:375px) {
+
+    body {
+        background: url(../images/pattern-background-desktop.svg) no-repeat  center top, var(--mainbg);
+    }
+
+    .summary__card {
+        width: 380px;
+        margin: 100px auto;
+    }
+
+    .info__container {
+        padding: 20px 40px;
+    }
+}
